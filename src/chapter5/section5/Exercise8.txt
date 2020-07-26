@@ -164,35 +164,35 @@ Compression ratio (as a function of N): (8 + 64N) / N = Approximately 6400%
 
 *** Huffman encoding ***
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_1ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_1ab.txt | java -cp algs4.jar:. BinaryDump 16
 0101100001101100
 0100000000000000
 0000000000000000
 01001000
 56 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_2ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_2ab.txt | java -cp algs4.jar:. BinaryDump 16
 0101100001101100
 0100000000000000
 0000000000000000
 10001010
 56 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_3ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_3ab.txt | java -cp algs4.jar:. BinaryDump 16
 0101100001101100
 0100000000000000
 0000000000000000
 1100101010000000
 64 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_4ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_4ab.txt | java -cp algs4.jar:. BinaryDump 16
 0101100001101100
 0100000000000000
 0000000000000001
 0000101010100000
 64 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_20ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_20ab.txt | java -cp algs4.jar:. BinaryDump 16
 0101100001101100
 0100000000000000
 0000000000000101
@@ -203,33 +203,33 @@ Compression ratio (as a function of N): (8 + 64N) / N = Approximately 6400%
 
 Compression ratio (the relation [number of sequences : bits needed to encode] is variable, so for this exercise we base the compression ratio on N = 100).
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_100ab.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_100ab.txt | java -cp algs4.jar:. BinaryDump 0
 256 bits
 
 Compression ratio: 256 / 100 = 256%
 
 *** LZW encoding ***
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_1ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_1ab.txt | java -cp algs4.jar:. BinaryDump 16
 0000011000010000
 0110001000010000
 00000000
 40 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_2ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_2ab.txt | java -cp algs4.jar:. BinaryDump 16
 0000011000010000
 0110001000010000
 0001000100000000
 48 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_3ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_3ab.txt | java -cp algs4.jar:. BinaryDump 16
 0000011000010000
 0110001000010000
 0001000100000001
 0001000000000000
 64 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_4ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_4ab.txt | java -cp algs4.jar:. BinaryDump 16
 0000011000010000
 0110001000010000
 0001000100000011
@@ -237,7 +237,7 @@ Compression ratio: 256 / 100 = 256%
 00000000
 72 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_20ab.txt | java -cp algs4.jar:. BinaryDump 16
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_20ab.txt | java -cp algs4.jar:. BinaryDump 16
 0000011000010000
 0110001000010000
 0001000100000011
@@ -252,7 +252,7 @@ Compression ratio: 256 / 100 = 256%
 
 Compression ratio (the relation [number of sequences : bits needed to encode] is variable, so for this exercise we base the compression ratio on N = 100). 
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_100ab.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_100ab.txt | java -cp algs4.jar:. BinaryDump 0
 352 bits
 
 Compression ratio: 352 / 100 = 352%

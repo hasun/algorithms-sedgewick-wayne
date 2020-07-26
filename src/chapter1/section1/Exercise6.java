@@ -12,7 +12,8 @@ public class Exercise6 {
 		int g = 1;
 		
 		for (int i = 0; i <= 15; i++) {
-			StdOut.println(f);
+			StdOut.println("f :: " + f);
+			StdOut.println("g::: "+g);
 			f = f + g;
 			g = f - g;
 		}

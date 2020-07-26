@@ -32,16 +32,16 @@ Bits needed to encode N copies of the symbol a: 32N
 
 *** Huffman encoding ***
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_1a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_1a.txt | java -cp algs4.jar:. BinaryDump 0
 56 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_2a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_2a.txt | java -cp algs4.jar:. BinaryDump 0
 56 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_3a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_3a.txt | java -cp algs4.jar:. BinaryDump 0
 56 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_20a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_20a.txt | java -cp algs4.jar:. BinaryDump 0
 72 bits
 
 Number of a symbols - bits needed to encode
@@ -56,16 +56,16 @@ Bits needed to encode N copies of the symbol a: 56 + ((N - 6) / 8 + 1) * 8
 
 *** LZW encoding ***
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_1a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_1a.txt | java -cp algs4.jar:. BinaryDump 0
 24 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_2a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_2a.txt | java -cp algs4.jar:. BinaryDump 0
 40 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_3a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_3a.txt | java -cp algs4.jar:. BinaryDump 0
 40 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_20a.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_20a.txt | java -cp algs4.jar:. BinaryDump 0
 88 bits
 
 Number of a symbols - bits needed to encode
@@ -116,16 +116,16 @@ Bits needed to encode N copies of the sequence abc: 96N
 
 *** Huffman encoding ***
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_1abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_1abc.txt | java -cp algs4.jar:. BinaryDump 0
 72 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_2abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_2abc.txt | java -cp algs4.jar:. BinaryDump 0
 72 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_3abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_3abc.txt | java -cp algs4.jar:. BinaryDump 0
 80 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.Huffman - < 5.5_input_20abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.Huffman - < 5.5_input_20abc.txt | java -cp algs4.jar:. BinaryDump 0
 168 bits
 
 Number of abc sequences - bits needed to encode
@@ -153,16 +153,16 @@ Bits needed to encode N copies of the sequence abc: 64 +     E   8
 
 *** LZW encoding ***
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_1abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_1abc.txt | java -cp algs4.jar:. BinaryDump 0
 48 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_2abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_2abc.txt | java -cp algs4.jar:. BinaryDump 0
 72 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_3abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_3abc.txt | java -cp algs4.jar:. BinaryDump 0
 88 bits
 
-% java -cp algs4.jar:. edu.princeton.cs.algs4.LZW - < 5.5_input_20abc.txt | java -cp algs4.jar:. BinaryDump 0
+% java -cp algs4.jar:. edu.princeton.cs.LZW - < 5.5_input_20abc.txt | java -cp algs4.jar:. BinaryDump 0
 232 bits
 
 Number of abc sequences - bits needed to encode
