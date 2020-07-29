@@ -1,6 +1,9 @@
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
+/**
+ * https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php
+ */
 public class Percolation {
     private int[][] id;
     private int[][] status; //1 represents open,0 represents blocked
